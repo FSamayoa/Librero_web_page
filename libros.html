@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El librero</title>
+
+    <link rel="shorcut icon" href="faviconLibro.ico" type="image/xicon" </head>
+
+    <style>
+        body {
+            font-family: "Lucida Console", "Courier New", monospace;
+            background: linear-gradient(to right, rgb(189, 189, 255), rgb(255, 233, 236));
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #04AA6D;
+        }
+
+        h1 {
+            background-color: black;
+            padding: 10px;
+            margin: 0;
+            color: #92a4ff;
+        }
+
+        div.gallery {
+            margin: 5px;
+            border: 1px solid #ccc;
+            float: left;
+            width: 33vw;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .centrado {
+            display: flex;
+            justify-content: center;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #FFF;
+            padding: 10px;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+
+
+<body>
+    <header>
+        <h1>El librero</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resenas.html">Reseñas</a></li>
+                <li><a class="active" href="libros.html">Libros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Ultima reseña</h2>
+    <hr>
+    <p>En esta ocacion hablamos del libro de Jeff Lindsay, Dexter el Obscuro pasajero.</p>
+
+    <div class="centrado">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/N3UpM3-FH_4" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </div>
+    <br><br><br><br>
+
+    <p>Aqui puedes encontrar el soundtrack para tu lectura</p>
+    <audio class="centrado" src="/assets/audio/North Sea - Riot.mp3" controls></audio>
+
+    <br><br><br><br>
+    <p>Te interesa otra reseña?, aqui hay una galeria con las otras disponibles</p>
+
+    <section class="centrado">
+        <div class="gallery">
+            <a href="/assets/img/libro1.jpg" target="_blank"><img src="/assets/img/libro1.jpg"
+                    alt="El diario de Ana Frank"></a>
+            <div class="desc">El diario de Ana Frank</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/libro3.jpg" target="_blank"><img src="/assets/img/libro3.jpg"
+                    alt="Guerra Mundial Z"></a>
+            <div class="desc">Guerra Mundial Z</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/libro4.jpg" target="_blank"><img src="/assets/img/libro4.jpg"
+                    alt="La guerra de los mundos"></a>
+            <div class="desc">La guerra de los mundos</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/libro5.png" target="_blank"><img src="/assets/img/libro5.png" alt="La iliada"></a>
+            <div class="desc">La iliada</div>
+        </div>
+        <div class="gallery">
+            <a href="/assets/img/Contacto.jpg" target="_blank"><img src="/assets/img/Contacto.jpg" alt="Contacto"></a>
+            <div class="desc">Contacto</div>
+        </div>
+    </section>
+
+    <footer class="footer">Specimen&copy; 2023. Derechos Reservados.</footer>
+</body>
+
+</html>
